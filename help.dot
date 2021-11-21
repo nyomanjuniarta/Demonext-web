@@ -1,0 +1,14 @@
+strict digraph  {
+rankdir = LR;
+e [label="", color="white"];
+f [label="NA", color="white"];
+c [label="", color="white"];
+d [label="indirect", color="white"];
+a [label="", color="white"];
+b [label="direct", color="white"];
+vertex [label="\[lexeme\]\n\[category\], \[frequency\]"];
+e -> f [dir="none", style="dashed"];
+c -> d [dir="none", style="dotted"];
+a -> b;
+d -> vertex [dir="none", color="white"];
+}
